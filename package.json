@@ -1,0 +1,14 @@
+{
+  "name": "repository",
+  "version": "1.0.0",
+  "description": "Repositorio de trabajos del TdeA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Faider Florez faiderfl@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  }
+}
