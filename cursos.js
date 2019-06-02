@@ -13,6 +13,7 @@ const options={
     }
 }
 
+
 const argv = require('yargs')
             .command('inscribir', 'Registro previo de un alumno a un curso', options)
             .argv
