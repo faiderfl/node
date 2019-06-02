@@ -1,0 +1,6 @@
+El id del curso es: 1
+El nombre del curso es: matematicas
+El valor del curso es: 100000
+La duración del curso es: 4 semanas
+El nombre del estudiante es: Faider
+La cedula del estudiante es: 1128274738
