@@ -4,7 +4,7 @@ const app = express()
 app.use(express.static(__dirname + '/public'));
 
 
-const {listarCursos, prematricula, argv}= require('./cursos');
+const {listarCursos, prematricula}= require('./cursos');
 const {argvCursos}= require('./yargs');
 const funciones= require('./funciones');
 
@@ -17,6 +17,18 @@ else */
 comando= argvCursos._[0];
 
 switch (comando){
+
+    case 'listarCursos':
+          listarCursos();
+    break;
+    case 'inscribir':
+            inscripcion= prematricula(argvCursos.id, argvCursos.nombre, argvCursos.cedula);
+            app.get('/', function (req, res) {
+                res.send(inscripcion);
+              });
+               
+              app.listen(3000);
+    break;
     case 'crear':
             funciones.crear(argvCursos);
     break;
@@ -30,7 +42,7 @@ switch (comando){
             funciones.mostrarMat();
     break;
     case 'calcularPromedioEst':
-          log.console('Promedio: '+ funciones.calcularPromedioEst(argvCursos.nombre));
+          console.log('Promedio: '+ funciones.calcularPromedioEst(argvCursos.nombre));
     break;
     case 'mostrarEstudiantesGanadores':
             funciones.mostrarEstudiantesGanadores();
@@ -39,21 +51,3 @@ switch (comando){
         console.log('Elija una opción correcta');
         break;
 }
-
-
-if(argv._[0]=='listarCursos'){
-    listarCursos()
-}
-else if(argv._[0]=='inscribir'){
-    inscripcion= prematricula(argv.id, argv.nombre, argv.cedula);
-}
-else{
-    console.log('Elija una opción correcta');
-}
-
-
-app.get('/', function (req, res) {
-  res.send(inscripcion)
-})
- 
-app.listen(3000)

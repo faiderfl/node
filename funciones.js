@@ -91,8 +91,7 @@ const calcularPromedioEst=(nom)=>
         promedio=0;
         let est= listaEstudiantes.find(element=>element.nombre==nom);
         if(est){
-        promedio= (est.matematicas+est.ingles+est.programacion)/3;
-       
+            promedio= (est.matematicas+est.ingles+est.programacion)/3;
         }
          
         return promedio;

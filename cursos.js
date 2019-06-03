@@ -1,22 +1,3 @@
-const options={
-    nombre:{
-        demand:true,
-        alias:'n'
-    },
-    cedula:{
-        demand:true,
-        alias:'c'
-    },
-    id:{
-        demand:true,
-        alias:'i'
-    }
-}
-
-
-const argv = require('yargs')
-            .command('inscribir', 'Registro previo de un alumno a un curso', options)
-            .argv
 const fs= require('fs');
 
 let cursos=[{
@@ -89,6 +70,6 @@ return texto;
 }
 
 
-module.exports={ listarCursos, prematricula, argv }
+module.exports={ listarCursos, prematricula }
 
 

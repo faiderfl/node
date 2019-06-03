@@ -33,7 +33,24 @@ const calcularPromedioEst={
     nombre
 }
 
+const options={
+    nombre:{
+        demand:true,
+        alias:'n'
+    },
+    cedula:{
+        demand:true,
+        alias:'c'
+    },
+    id:{
+        demand:true,
+        alias:'i'
+    }
+}
+
+
 const argvCursos = require('yargs')
+            .command('inscribir', 'Registro previo de un alumno a un curso', options)
             .command('crear', 'Creación de un estudiante en mi BD', creacion)
             .command('mostrar', 'Mostrar la lista de estudiantes')
             .command('mostrarEst', 'Mostrar un estudiante', mostraEst)

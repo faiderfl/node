@@ -9,8 +9,12 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\index.js",
-            //"args": ["crear", "--nombre='faider'", "--matematicas=3", "--ingles=3","--programacion=4"]
+            //"args": ["listarCursos"]
+            //"args": ["inscribir", "--nombre='faider'", "--cedula=1128874738", "--id=1"]
+            //"args": ["crear", "--nombre='andres'", "--matematicas=2", "--ingles=2","--programacion=1"]
+            //"args": ["mostrar"]
             //"args": ["mostrarEst", "--nombre=\"faider\""]
+            //"args": ["calcularPromedioEst", "--nombre=\"faider\""]
             "args": ["mostrarEstudiantesGanadores"]
         }
     ]
