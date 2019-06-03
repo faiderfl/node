@@ -40,7 +40,7 @@ switch (comando){
         break;
 }
 
-/*
+
 if(argv._[0]=='listarCursos'){
     listarCursos()
 }
@@ -57,4 +57,3 @@ app.get('/', function (req, res) {
 })
  
 app.listen(3000)
-*/ 

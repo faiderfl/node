@@ -1,15 +1,24 @@
 Node.JS TDEA
 
-First task:
+Primera parte y Bonus Inscribir:
 
-* Para ejecutar se debe ejecutar alguno de estos comandos:
+* Para incribir un estudiante se debe ejecutar alguno de estos comandos:
 
-  node index inscribir -n="Faider" -c=1128274738 -i=1
-  node index inscribir --nombre="Faider" -cedula=1128274738 --id=1
-
+    node index inscribir -n="faider" -c=1128274738 -i=1
+    node index inscribir --nombre="faider" -cedula=1128274738 --id=1
 
 Esto ejecutará el archivo index.js en la opción de inscribir y mostrará en la dirección 127.0.0.1:3000 y guardará el archivo preinscribir.txt
 
 * Para el comando de listar los cursos se debe usar:
 
-  node index listarCursos 
+    node index listarCursos 
+
+Bonus Promedio y Estudiantes Ganadores:
+
+* Para calcular el promedio de un estudiante utilice el comando: 
+ 
+    node index calcularPromedioEst -n="faider"
+
+* Para mostrar los estudiantes ganadores utilice el comando:
+
+    node index mostrarEstudiantesGanadores
